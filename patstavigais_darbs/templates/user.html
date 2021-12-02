@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<p>
+    Name:<strong> {{ user.username }}!</strong> <br>
+    E-mail: {{ user.e_mail }}
+    Reason: {{ user.reason }}
+</p>
+{% endblock %}

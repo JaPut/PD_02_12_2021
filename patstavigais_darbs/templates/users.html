@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+        {% for user in users %}
+        <a href="{% url 'get_visit' visit_id=user.id %}">
+         <div> Vārds: {{ user.username }}
+             E-mail: {{ user.e_mail }}
+             Reason: {{ user.reason }}
+         </div><br>
+        </a>
+        {% endfor %}
+
+
+{% endblock %}
